@@ -1,0 +1,25 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:active,
+a::before,
+a::after {
+    text-decoration: none;
+    color: $White;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: $VeryDarkBlue;
+    color: $White;
+
+}
+
+.active {
+    opacity: 1;
+    background-color: $MediumGrey;
+}

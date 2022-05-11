@@ -1,0 +1,139 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:active,
+a::before,
+a::after {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background-color: #121417;
+  color: white;
+}
+
+.active {
+  opacity: 1;
+  background-color: #7c8798;
+}
+
+.box_container .card_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 1px solid #252d37;
+  padding: 35px 30px 45px 30px;
+  width: 380px;
+  height: auto;
+  border-radius: 30px;
+  background-color: #252d37;
+  opacity: 0.9;
+}
+
+@media (max-width: 39.9375em) {
+  .box_container .card_container {
+    padding: 30px 30px 40px 30px;
+    width: 285px;
+    height: auto;
+  }
+}
+
+.box_container .star_icon img {
+  border-radius: 50%;
+  padding: 15px;
+  background-color: rgba(124, 135, 152, 0.1);
+}
+
+.box_container .content h2 {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 39.9375em) {
+  .box_container .content h2 {
+    font-size: 23px;
+  }
+}
+
+.box_container .content p {
+  opacity: 0.7;
+}
+
+@media (max-width: 39.9375em) {
+  .box_container .content p {
+    font-size: 14px;
+  }
+}
+
+.box_container .rate_numbers {
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+@media (max-width: 39.9375em) {
+  .box_container .rate_numbers {
+    margin-bottom: 45px;
+    margin-top: 25px;
+  }
+}
+
+.box_container .rate_numbers li {
+  background-color: rgba(124, 135, 152, 0.1);
+  border-radius: 50%;
+  padding: 15px 21px;
+  opacity: 0.7;
+}
+
+@media (max-width: 39.9375em) {
+  .box_container .rate_numbers li {
+    padding: 12px 19px;
+  }
+}
+
+.box_container .rate_numbers li:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #fb7413;
+  opacity: 1;
+}
+
+.box_container .rate_numbers li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.box_container .button {
+  background-color: #fb7413;
+  padding: 12px 165px;
+  border-radius: 30px;
+}
+
+@media (max-width: 39.9375em) {
+  .box_container .button {
+    padding: 12px 120px;
+  }
+}
+
+.box_container .button:hover {
+  background-color: white;
+  color: #fb7413;
+}
+/*# sourceMappingURL=style.css.map */
