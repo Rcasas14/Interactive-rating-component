@@ -1,5 +1,12 @@
 .box_container {
 
+    .active {
+        opacity: 1;
+        background-color: $MediumGrey !important;
+    }
+
+    .front {}
+
     .card_container {
         position: absolute;
         top: 50%;
@@ -61,7 +68,6 @@
             margin-top: 25px;
         }
 
-
         li {
             background-color: rgba(124, 135, 152, 0.1);
             border-radius: 50%;
@@ -98,6 +104,64 @@
         &:hover {
             background-color: $White;
             color: $Orange;
+        }
+    }
+
+    .d-none {
+        display: none;
+    }
+
+    .overlay {
+
+
+        &__content {
+
+            p {
+                color: $Orange;
+                text-align: center;
+                background-color: rgba(124, 135, 152, 0.1);
+                border-radius: 20px;
+                margin: 16px 87px;
+                padding: 7px 0px;
+
+                @include breakpoint-down(small) {
+                    font-size: 14px;
+                    margin: 16px 55px;
+                }
+            }
+        }
+
+        &__image {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                padding-bottom: 5px;
+            }
+        }
+
+        &__thankyou {
+
+            text-align: center;
+
+            h2 {
+                margin-bottom: 15px;
+
+                @include breakpoint-down(small) {
+                    font-size: 23px;
+                }
+            }
+
+            p {
+                opacity: 0.7;
+
+                @include breakpoint-down(small) {
+                    font-size: 14px;
+                }
+            }
+
         }
     }
 }

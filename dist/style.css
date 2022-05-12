@@ -19,9 +19,9 @@ body {
   color: white;
 }
 
-.active {
+.box_container .active {
   opacity: 1;
-  background-color: #7c8798;
+  background-color: #7c8798 !important;
 }
 
 .box_container .card_container {
@@ -135,5 +135,65 @@ body {
 .box_container .button:hover {
   background-color: white;
   color: #fb7413;
+}
+
+.box_container .d-none {
+  display: none;
+}
+
+.box_container .overlay__content p {
+  color: #fb7413;
+  text-align: center;
+  background-color: rgba(124, 135, 152, 0.1);
+  border-radius: 20px;
+  margin: 16px 87px;
+  padding: 7px 0px;
+}
+
+@media (max-width: 39.9375em) {
+  .box_container .overlay__content p {
+    font-size: 14px;
+    margin: 16px 55px;
+  }
+}
+
+.box_container .overlay__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box_container .overlay__image img {
+  padding-bottom: 5px;
+}
+
+.box_container .overlay__thankyou {
+  text-align: center;
+}
+
+.box_container .overlay__thankyou h2 {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 39.9375em) {
+  .box_container .overlay__thankyou h2 {
+    font-size: 23px;
+  }
+}
+
+.box_container .overlay__thankyou p {
+  opacity: 0.7;
+}
+
+@media (max-width: 39.9375em) {
+  .box_container .overlay__thankyou p {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
