@@ -19,4 +19,4 @@ button.addEventListener('click', () => {
         front.classList.add('d-none');
         overlay.classList.remove('d-none');
     }
-})
+});
